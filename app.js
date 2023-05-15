@@ -8,7 +8,6 @@
         init(){
             App.HTMLElement.formFibonnacci.addEventListener("submit",App.handlers.formFibonnacciFormSubmitHandler);
            App.HTMLElement.formFibonnacci.addEventListener("reset" ,App.handlers.formfibonnacciFormResetHandler);
-          //  App.HTMLElement.formFibonnacci.getElementById("2", App.handlers.formfibonnacciFormResetHandler);
         },
         handlers: {
             formFibonnacciFormSubmitHandler(event) {
@@ -16,16 +15,9 @@
                 const quantity = App.HTMLElement.formFibonnacciImput.value;
                 const fibonnacciNumbers = App.methods.getFibonnacciNumbers(quantity);
                 App.methods.imprimirFibonnacciNumbers(fibonnacciNumbers);
-                //console.log({ fibonnacciNumbers});
-
-              //  App.HTMLElement.formFibonnacciForm
             },
             formfibonnacciFormResetHandler(event){
                 App.methods.confirmar("resp");
-        //        if ("resp" == true){
-//
-        //        }
-       //         else{}
             },
         },
         methods: {
